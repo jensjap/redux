@@ -1,16 +1,16 @@
 require 'spec_helper'
 
 describe "Static pages" do
-    let(:base_title) { "SRDR - Systematic Review Data Repository" }
+    let(:base_title) { "SRDR - Redux" }
 
     describe "Home page" do
 
-        it "should have the content 'SRDR Testing'" do
+        it "should have the content 'SRDR - Redux'" do
             visit '/static_pages/home'
-            expect(page).to have_content('SRDR Testing')
+            expect(page).to have_content('SRDR - Redux')
         end
 
-        it "should have the title 'Home'" do
+        it "should have the title 'SRDR - Redux'" do
             visit '/static_pages/home'
             expect(page).to have_title("#{base_title}")
         end
